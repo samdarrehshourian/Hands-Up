@@ -6,7 +6,6 @@ import Messages from './Messages.js';
 import Achievements from './Achievements.js'; 
 import Profile from './Profile.js'; 
 
-
 const  MenuBar = () => {
   return (
     <div id = 'MenuBar'>

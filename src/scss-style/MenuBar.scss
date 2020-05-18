@@ -1,1 +1,14 @@
 @import './Colors.scss'; 
+@import './Fonts.scss'; 
+
+
+#MenuBar {
+    ul {
+        list-style-type: none;
+
+        a {
+            font-family: 'Roboto', sans-serif;
+            font-weight: regular; 
+        }
+      }
+}

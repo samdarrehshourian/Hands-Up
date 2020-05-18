@@ -4,12 +4,12 @@ import Home from './Home.js';
 import Courses from './Courses.js'; 
 import Messages from './Messages.js'; 
 import Achievements from './Achievements.js'; 
-import Profile from './Profile.js'; 
+import Profile from './Profile.js';
+import '../scss-style/MenuBar.scss'; 
 
 const  MenuBar = () => {
   return (
     <div id = 'MenuBar'>
-        <h1>MenuBar</h1>
         <Router>
         <div>
             <nav>

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../scss-style/Achievements.scss'; 
 
 const  Achievements = () => {
   return (

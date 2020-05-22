@@ -1,16 +1,27 @@
 @import './Colors.scss'; 
 @import './Fonts.scss'; 
 
+#menu-bar {
 
-#MenuBar {
+    width: 20%; 
+    height: 100%;
+    background-color: $gray; 
+    margin-bottom: 20%; 
+    
+
     ul {
         list-style-type: none;
+        margin: 0; 
 
-        a {
-            font-family: 'Roboto', sans-serif;
-            font-weight: regular;
-            color: $black; 
-            text-decoration: none; 
+        li{
+            padding: 5%;
+            
+            a {
+                font-family: 'Roboto', sans-serif;
+                font-weight: regular;
+                color: $black; 
+                text-decoration: none; 
+            }
         }
-      }
+    }
 }

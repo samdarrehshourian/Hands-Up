@@ -3,7 +3,7 @@ import '../scss-style/Achievements.scss';
 
 const  Achievements = () => {
   return (
-    <div>
+    <div className = 'achievements'>
         <h1>Achievements</h1>
     </div>
   );

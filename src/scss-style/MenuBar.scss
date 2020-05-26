@@ -1,13 +1,12 @@
 @import './Colors.scss'; 
 @import './Fonts.scss'; 
 
-#menu-bar {
+nav {
 
     width: 20%; 
     height: 100%;
     background-color: $gray; 
-    margin-bottom: 20%; 
-    
+    margin-bottom: 20%;    
 
     ul {
         list-style-type: none;

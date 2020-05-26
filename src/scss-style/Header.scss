@@ -1,2 +1,36 @@
 @import './Colors.scss';
 @import './Fonts.scss';  
+
+#Header {
+
+    background-color: #454545; 
+    font-family: 'Montserrat';
+    color: #FFFFFF;  
+    padding: 1px 25px 1px 0px;
+    display: inline-block; 
+    width: 100%; 
+
+    img {
+        float: left;
+        margin: 10px 5px 0px 25px;
+    }
+
+    #logo {
+        float: left;
+    }
+
+    #user {
+        float: right;
+    }
+
+    #profilePicture {
+        float: right; 
+        height: 30px; 
+        width: 30px; 
+        background-color: $lightGrey;
+        border-radius: 50%;
+        margin: 10px 10px 0px 25px;
+        //display: inline-block; 
+    }
+
+}

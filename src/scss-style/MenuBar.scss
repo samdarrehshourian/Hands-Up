@@ -20,7 +20,11 @@ nav {
                 font-family: 'Roboto', sans-serif;
                 font-weight: regular;
                 color: $black; 
-                text-decoration: none; 
+                text-decoration: none;
+                
+                    &:hover {
+                        color: $blue;
+                    }
             }
         }
     }

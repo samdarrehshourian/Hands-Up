@@ -9,13 +9,11 @@
         width: 311px; 
         height: 846px;
         background-color: #ECECEC;
-         
-        
+    
         ul {
             list-style-type: none;
             margin: 0; 
-    
-<<<<<<< HEAD
+
             li{
                 padding: 5%;
                 
@@ -23,29 +21,15 @@
                     font-family: 'Roboto', sans-serif;
                     font-weight: regular;
                     color: $black; 
-                    text-decoration: none; 
-                }
-=======
-
-    ul {
-        list-style-type: none;
-        margin: 0; 
-
-        li{
-            padding: 5%;
-            
-            a {
-                font-family: 'Roboto', sans-serif;
-                font-weight: regular;
-                color: $black; 
-                text-decoration: none;
-                
+                    text-decoration: none;
+                    
                     &:hover {
                         color: $blue;
                     }
->>>>>>> fd971d4a8b7ac76e57d0eb951277583533a28818
+                }
             }
         }
     }
 }
+
 

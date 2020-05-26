@@ -2,5 +2,7 @@
 @import './Fonts.scss'; 
 
 .home {
-    text-align: center; 
+    text-align: center;
+    display: table-cell;
+    width: 60%;
 }

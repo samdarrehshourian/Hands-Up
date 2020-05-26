@@ -1,26 +1,31 @@
 @import './Colors.scss'; 
 @import './Fonts.scss'; 
 
-nav {
+.container{
+    display: table-row;
 
-    width: 311px; 
-    height: 846px;
-    background-color: #ECECEC; 
-    margin-bottom: 20%; 
+    nav {
+        display: table-cell;
+        width: 311px; 
+        height: 846px;
+        background-color: #ECECEC;
+         
+        
+        ul {
+            list-style-type: none;
+            margin: 0; 
     
-    ul {
-        list-style-type: none;
-        margin: 0; 
-
-        li{
-            padding: 5%;
-            
-            a {
-                font-family: 'Roboto', sans-serif;
-                font-weight: regular;
-                color: $black; 
-                text-decoration: none; 
+            li{
+                padding: 5%;
+                
+                a {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: regular;
+                    color: $black; 
+                    text-decoration: none; 
+                }
             }
         }
     }
 }
+

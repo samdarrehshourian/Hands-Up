@@ -3,8 +3,9 @@ import '../scss-style/Header.scss';
 
 const  Header = () => {
   return (
-    <div className = 'top-bar'>
-        <h1>Header</h1>
+    <div id = 'Header'>
+        <p id = "logo">Hands<b>Up</b></p> 
+        <p id = "user">Hi, Daniel</p>
     </div>
   );
 }

@@ -1,15 +1,19 @@
 @import './Colors.scss';
-<<<<<<< HEAD
 @import './Fonts.scss';  
 
 #Header {
+
+    #img {
+        float: left; 
+        display: inline-block; 
+    }
 
     background-color: #454545; 
     font-family: 'Montserrat';
     color: #FFFFFF;  
     padding: 0.05px 25px 0.05px 25px;
     display: inline-block; 
-    width: 96.1%; 
+    width: 100%; 
     
     #logo {
         float: left;
@@ -17,9 +21,7 @@
 
     #user {
         float: right;
+        font-size: 15px;
     }
 
 }
-=======
-@import './Fonts.scss';  
->>>>>>> 34ea26372cdc6f30b2b5ae9d38ff4bc8d53020a9

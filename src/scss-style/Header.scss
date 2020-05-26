@@ -6,17 +6,16 @@
     background-color: #454545; 
     font-family: 'Montserrat';
     color: #FFFFFF;  
-    padding: 0.05px 0px 0.05px 25px; 
-    position: header; 
+    padding: 0.05px 25px 0.05px 25px;
+    display: inline-block; 
+    width: 96.1%; 
     
-    #p logo {
-        
+    #logo {
+        float: left;
     }
 
-    #p user {
-
-        text-align: right;
-        position: right;
-
+    #user {
+        float: right;
     }
+
 }

@@ -1,2 +1,8 @@
 @import './Colors.scss';
 @import './Fonts.scss'; 
+
+.home {
+    text-align: center;
+    display: table-cell;
+    width: 60%;
+}

@@ -2,9 +2,8 @@
 @import './Fonts.scss'; 
 
 .home {
-    text-align: center;
-    display: table-cell;
-    width: 60%;
+    flex: 3; 
+    overflow-y: scroll;
 
     h1 {
         margin: 0;

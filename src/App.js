@@ -1,6 +1,6 @@
 import React from 'react';
-import MenuBar from './components/MenuBar'; 
 import Header from './components/Header';
+import Layout from './components/Layout';
 import './scss-style/App.scss'; 
 
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <MenuBar/>
+      <Layout/>
     </div>
   );
 }

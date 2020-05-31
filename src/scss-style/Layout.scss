@@ -1,22 +1,25 @@
 @import './Colors.scss'; 
 @import './Fonts.scss'; 
 
-.container{
-    display: table-row;
+#layout-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 92.6vh;
 
-    nav {
-        display: table-cell;
-        width: 311px; 
-        height: 846px;
-        background-color: #ECECEC;
-    
+    #side-menu {
+        flex: 1;
+        background-color: #ececec;
+        height: 92.6vh;
+
         ul {
             list-style-type: none;
-            margin: 0; 
+            margin: 0;
+            padding-top: 10%; 
 
-            li{
-                padding: 5%;
-                
+            li {
+                margin-bottom: 10%;
+
                 a {
                     font-family: 'Roboto', sans-serif;
                     font-weight: regular;
@@ -31,5 +34,3 @@
         }
     }
 }
-
-

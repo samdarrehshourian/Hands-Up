@@ -5,33 +5,32 @@ import Courses from './Courses.js';
 import Messages from './Messages.js'; 
 import Achievements from './Achievements.js'; 
 import Profile from './Profile.js';
-import '../scss-style/MenuBar.scss'; 
+import Schedule from './Schedule';
+import '../scss-style/Layout.scss'; 
 
 const  MenuBar = () => {
   return (
-    <div className = 'container'>
+    <div id = 'layout-container'>
         <Router>
-            <div id = 'menu-bar'>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/courses">Courses</Link>
-                        </li>
-                        <li>
-                            <Link to="/messages">Messages</Link>
-                        </li>
-                        <li>
-                            <Link to="/achievements">Achievements</Link>
-                        </li>
-                        <li>
-                            <Link to="/profile">Profile</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <nav id = 'side-menu'>
+                <ul>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/courses">Courses</Link>
+                    </li>
+                    <li>
+                        <Link to="/messages">Messages</Link>
+                    </li>
+                    <li>
+                        <Link to="/achievements">Achievements</Link>
+                    </li>
+                    <li>
+                        <Link to="/profile">Profile</Link>
+                    </li>
+                </ul>
+            </nav>
             <Switch>
                 <Route exact path="/">
                     <Home/>
@@ -50,6 +49,7 @@ const  MenuBar = () => {
                 </Route>
             </Switch>
         </Router>
+        <Schedule/>
     </div>
   );
 }

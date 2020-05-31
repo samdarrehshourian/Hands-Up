@@ -4,8 +4,10 @@ import '../scss-style/Courses.scss';
 
 const  Courses = () => {
   return (
-    <div className = 'courses'>
+    <div className = 'courses-container'>
+      <div className = 'courses'>
         <h1>Courses</h1>
+      </div>
     </div>
   );
 }

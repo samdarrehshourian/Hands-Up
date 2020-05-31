@@ -1,11 +1,13 @@
 @import './Colors.scss';
 @import './Fonts.scss'; 
 
-.home {
+.home-container{
     flex: 3; 
     overflow-y: scroll;
-
-    h1 {
-        margin: 0;
+    display: flex;
+    .home{
+        h1 {
+            margin: 0;
+        }
     }
 }

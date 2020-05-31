@@ -1,10 +1,13 @@
 @import './Colors.scss'; 
 @import './Fonts.scss'; 
 
-.messages{
+.messages-container{
     flex: 3;
-    overflow-y: scroll; 
-    h1 {
-        margin: 0;
-    }
+    overflow-y: scroll;
+    display: flex;
+    .messages{
+        h1 {
+            margin: 0;
+        }
+    } 
 }

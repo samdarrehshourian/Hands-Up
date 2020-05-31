@@ -3,8 +3,10 @@ import '../scss-style/Profile.scss';
 
 const  Profile = () => {
   return (
-    <div className = 'profile'>
+    <div className = 'profile-container'>
+      <div className = 'profile'>
         <h1>Profile</h1>
+      </div>
     </div>
   );
 }

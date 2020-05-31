@@ -3,8 +3,10 @@ import '../scss-style/Messages.scss';
 
 const  Messages = () => {
   return (
-    <div className = 'messages'>
+    <div className = 'messages-container'>
+      <div className = 'messages'>
         <h1>Messages</h1>
+      </div>
     </div>
   );
 }

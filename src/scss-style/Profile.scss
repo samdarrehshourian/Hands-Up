@@ -1,10 +1,13 @@
 @import './Colors.scss';
 @import './Fonts.scss';  
 
-.profile{
+.profile-container{
     flex: 3;
-    overflow-y: scroll; 
-    h1 {
-        margin: 0;
-    }
+    overflow-y: scroll;
+    display: flex;
+    .profile{
+        h1 {
+            margin: 0;
+        }
+    } 
 }

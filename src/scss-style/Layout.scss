@@ -11,11 +11,11 @@
         flex: 1;
         background-color: #ececec;
         height: 92.6vh;
+        display: flex; 
 
         ul {
             list-style-type: none;
-            margin: 0;
-            padding-top: 10%; 
+            position: fixed;
 
             li {
                 margin-bottom: 10%;

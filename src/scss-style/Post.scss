@@ -1,0 +1,115 @@
+@import './Colors.scss';
+@import './Fonts.scss'; 
+
+.post-container{
+    display: inline-block;  
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: $white;
+    border-radius: 9px;
+    box-shadow: 1px 2px 3px $darkGray; 
+
+    .name-course-info-container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 1%;
+        margin-bottom: 1%;
+
+        .profile-pic{
+            width: 5%;
+            height: auto;
+            border-radius: 25px;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        .arrow-icon{
+            width: 20px; 
+            height: 20px;
+            margin-right: 1%;
+            margin-left: 1%;
+        }
+
+        p{
+            @include font($bold, smaller, $black);
+        }
+    }
+    
+    .content-container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        p{
+            @include font($regular, smaller, $black);
+            margin-right: 11%;
+            margin-left: 11%;
+            margin-bottom: 5%;
+            white-space: normal;
+        }
+    }
+
+    hr{
+        width: 86%;
+        border-top: 1px solid $blue;
+        border-bottom: $white;
+        border-width: thin;
+        margin-bottom: 0; 
+        margin-top: 0; 
+    }
+
+    .like-share-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .icon{
+            width: 15px;
+            height: 15px;
+            margin:1%;
+        }
+
+        .text{
+            @include font($regular, smaller, $darkGray);
+            margin: 1%;
+        }
+
+        #share-icon{
+            margin-left: 5%;
+        }
+
+        #like-text{
+            margin-right: 5%;
+        }
+    }
+
+    .comment-container{
+        display: flex;
+        padding-top: 2%;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2%;
+
+        .comment-pic{
+            width: 4.5%;
+            height: auto;
+            border-radius: 50px;
+            margin-right: 1%;
+        }
+
+        .comment-input{
+            width: 76%;
+            padding: 1% 2%;
+            border-radius: 50px;
+            border-style: solid;
+            border-color: $darkGray;
+            border-width: thin;
+        }
+    }
+}

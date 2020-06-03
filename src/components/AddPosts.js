@@ -6,6 +6,45 @@ import tagFriendsIcon from '../icons/Flow/tagFriends.png';
 import '../scss-style/AddPosts.scss'; 
 
 const  AddPosts = () => {
+
+  const posts = [
+    {
+      userImg: profileImg, 
+      userName: "Daniel Villacorta", 
+      content: "Has someone solved exercises 5.1.12?", 
+      course: "Discrete Mathematics",
+      img: profileImg
+    },
+    {
+      userImg: profileImg, 
+      userName: "Amanda Eriksson", 
+      content: "Is anyone having problems with Slack? I can’t log in.", 
+      course: "Technology for Social Media",
+      img: profileImg
+    },
+    {
+      userImg: profileImg, 
+      userName: "Frida Ylitalo", 
+      content: "Can someone share theire notes with me from todays lecture?", 
+      course: "Statistics",
+      img: profileImg
+    },
+    {
+      userImg: profileImg, 
+      userName: "Sam Zadeh Darrehshourian", 
+      content: "At what time is the exam?", 
+      course: "Discrete Mathematics",
+      img: profileImg
+    },
+    {
+      userImg: profileImg, 
+      userName: "Frida Andersson", 
+      content: "When will the lecture slides be out?", 
+      course: "Discrete Mathematics",
+      img: profileImg
+    }
+  ]; 
+
   return (
     <div className = 'add-post-container'>
       <div id = 'add-post-title'>

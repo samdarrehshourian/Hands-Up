@@ -101,8 +101,7 @@ const  Achievements = () => {
         <div className = "noteUnlock">
           <img id = "image_unlock" src={unlock} alt="Unlocked icon"></img>
           <p>You unlocked a new hashtag sinece last time!</p>
-        </div>
-        
+        </div> 
       </div>
 
     </div>

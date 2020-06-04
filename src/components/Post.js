@@ -10,7 +10,7 @@ const  Post = () => {
   return (
       <div className = 'post-container'>
         <div className = 'name-course-info-container'>
-            <img className = 'profile-pic' src={profileImg} alt='Example of profile picture'/>
+            <img className = 'profile-pic' src={profileImg} alt='Profile'/>
             <p>Daniel Villacorta</p>
             <img className = 'arrow-icon' src={arrow} alt='Arrow-icon'/>
             <p>Technology for Social Media</p>
@@ -27,7 +27,7 @@ const  Post = () => {
         </div>
         <hr></hr>
         <div className = 'comment-container'>
-            <img className = 'comment-pic' src={profileImg} alt='Example of profile picture'/>
+            <img className = 'comment-pic' src={profileImg} alt='Profile'/>
             <input className = 'comment-input' type='text' placeholder="Add a comment ..."/>
         </div>
       </div>

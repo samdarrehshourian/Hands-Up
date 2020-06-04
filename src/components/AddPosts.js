@@ -13,35 +13,40 @@ const  AddPosts = () => {
       userName: "Daniel Villacorta", 
       content: "Has someone solved exercises 5.1.12?", 
       course: "Discrete Mathematics",
-      img: profileImg
+      img: profileImg, 
+      id: 0
     },
     {
       userImg: profileImg, 
       userName: "Amanda Eriksson", 
       content: "Is anyone having problems with Slack? I can’t log in.", 
       course: "Technology for Social Media",
-      img: profileImg
+      img: profileImg,
+      id: 1
     },
     {
       userImg: profileImg, 
       userName: "Frida Ylitalo", 
       content: "Can someone share theire notes with me from todays lecture?", 
       course: "Statistics",
-      img: profileImg
+      img: profileImg,
+      id: 2
     },
     {
       userImg: profileImg, 
       userName: "Sam Zadeh Darrehshourian", 
       content: "At what time is the exam?", 
       course: "Discrete Mathematics",
-      img: profileImg
+      img: profileImg, 
+      id: 3
     },
     {
       userImg: profileImg, 
       userName: "Frida Andersson", 
       content: "When will the lecture slides be out?", 
       course: "Discrete Mathematics",
-      img: profileImg
+      img: profileImg, 
+      id: 4
     }
   ]; 
 
@@ -52,14 +57,14 @@ const  AddPosts = () => {
       </div>
       <div className = 'add-post-content'>
         <div id = 'pic-input-container'>
-          <img id = 'profile-pic' src={profileImg} alt='Example of profile picture'/>
+          <img id = 'profile-pic' src={profileImg} alt='profile'/>
           <input type='text' placeholder="Hi Daniel, what's on your mind?"/>
         </div>
         <div className = 'feature-container'>
           <div className = 'feature'>
             <img className = 'add-posts-icons' src={chooseCourseIcon} alt='Icon for choosing courses'/>
             <select id = "course-list">
-              <option selected value = "0">Choose course</option>
+              <option defaultValue value = "0">Choose course</option>
               <option value = "1">Technology for Social Media</option>
               <option value = "2">Discrete Mathematics</option>
               <option value = "3">Javascript for beginners</option>

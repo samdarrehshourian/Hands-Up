@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'; 
+import {BrowserRouter as Router, Route, Switch, NavLink} from 'react-router-dom'; 
 import Home from './Home.js'; 
 import Courses from './Courses.js'; 
 import Messages from './Messages.js'; 
@@ -7,6 +7,15 @@ import Achievements from './Achievements.js';
 import Profile from './Profile.js';
 import Schedule from './Schedule';
 import '../scss-style/Layout.scss'; 
+import homeLogo from '../icons/Sidebar_meny/Home.png'
+import coursesLogo from '../icons/Sidebar_meny/Corses.png'
+import achivmentsLogo from '../icons/Sidebar_meny/Achivments.png'
+import messageLogo from '../icons/Sidebar_meny/Message.png'
+import profileLogo from '../icons/Sidebar_meny/Profile.png'
+
+
+
+
 
 const  MenuBar = () => {
   return (
@@ -15,19 +24,25 @@ const  MenuBar = () => {
             <nav id = 'side-menu'>
                 <ul>
                     <li>
-                        <Link to="/">Home</Link>
+                        <img src={homeLogo} alt="logo" />   
+                        <NavLink exact activeClassName="active" to="/">Home</NavLink>
                     </li>
                     <li>
-                        <Link to="/courses">Courses</Link>
+                        <img src={coursesLogo} alt="logo" />
+                        <NavLink activeClassName="active" to="/courses">Courses</NavLink>
                     </li>
                     <li>
-                        <Link to="/messages">Messages</Link>
+                        <img src={achivmentsLogo} alt="logo" />
+                        <NavLink activeClassName="active" to="/achievements">Achievements</NavLink>
                     </li>
                     <li>
-                        <Link to="/achievements">Achievements</Link>
+                        <img src={messageLogo} alt="logo" />
+                        <NavLink activeClassName="active" to="/messages">Messages </NavLink>
+                        <span className="badge">2</span>
                     </li>
                     <li>
-                        <Link to="/profile">Profile</Link>
+                        <img src={profileLogo} alt="logo" />
+                        <NavLink activeClassName="active" to="/profile">Profile</NavLink>
                     </li>
                 </ul>
             </nav>
@@ -53,5 +68,6 @@ const  MenuBar = () => {
     </div>
   );
 }
+
 
 export default MenuBar;

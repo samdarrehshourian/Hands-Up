@@ -7,7 +7,37 @@
     display: flex;
     .profile{
         h1 {
+            font-family: "Roboto", sans-serif;
+            color: $text;
+            padding-left: 10%;
+            padding-right: 10%;
             margin: 0;
+            text-align: left;
+            
+        }
+        img {
+            width: 25%;
+            height: auto;
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 38px;
+            
+        }
+
+        h2 {
+            margin-bottom: 0;
+            text-align: center;
+        }
+        hr {
+            border-top: 1px solid $black;
+            border-bottom: $white;
+            border-width: thin;
+            margin-bottom: 0; 
+            margin-top: 4px;
+            margin-inline-start: 109px;
+            margin-inline-end: 109px;
         }
     } 
 }

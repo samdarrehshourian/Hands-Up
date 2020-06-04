@@ -6,8 +6,12 @@
     overflow-y: scroll;
     display: flex;
     justify-content: center;
-    background-color: $white;
 
+    background-image: url(../home-picture/Handsup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
     .home{
         width: 70%;
         h1 {
@@ -15,3 +19,4 @@
         }
     }
 }
+

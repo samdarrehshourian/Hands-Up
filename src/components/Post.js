@@ -1,12 +1,10 @@
 import React from 'react';
-import profileImg from '../example-picture/example-picture.jpg';
 import arrow from '../icons/Flow/Pil_flowToPerson.png';
 import like from '../icons/Flow/like.png';
 import share from '../icons/Flow/shareWithGroup.png';
 import '../scss-style/Post.scss'; 
 
 const  Post = (props) => {
-    console.log(props);
     return (
         <div className = 'post-container'>
             <div className = 'name-course-info-container'>
@@ -27,7 +25,7 @@ const  Post = (props) => {
             </div>
             <hr></hr>
             <div className = 'comment-container'>
-                <img className = 'comment-pic' src={profileImg} alt='Profile'/>
+                <img className = 'comment-pic' src={props.image} alt='Profile'/>
                 <input className = 'comment-input' type='text' placeholder="Add a comment ..."/>
             </div>
         </div>

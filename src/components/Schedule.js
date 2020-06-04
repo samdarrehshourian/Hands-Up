@@ -83,54 +83,42 @@ const Schedule = () => {
       <div id = 'courses'>
 
         <div className = 'subject'>
-          <div id = "subjectColour1">
-
-          </div>
+          <div id = "subjectColour1"></div>
           <div className = 'course'>
             <p>Technology for Social Media</p>
           </div>
         </div>
 
         <div className = 'subject'>
-          <div id = "subjectColour2">
-
-          </div>
+          <div id = "subjectColour2"></div>
           <div className = 'course'>
             <p>Current topic in ITD</p>
           </div>
         </div>
 
         <div className = 'subject'>
-          <div id = "subjectColour3">
-
-          </div>
+          <div id = "subjectColour3"></div>
           <div className = 'course'>
             <p>Introduction to Discrete Mathematics</p>
           </div>
         </div>
 
         <div className = 'subject'>
-          <div id = "subjectColour4">
-
-          </div>
+          <div id = "subjectColour4"></div>
           <div className = 'course'>
             <p>Daniel Villacorta</p>
           </div>
         </div>
 
         <div className = 'subject'>
-          <div id = "subjectColour5">
-
-          </div>
+          <div id = "subjectColour5"></div>
           <div className = 'course'>
             <p>Deadlines</p>
           </div>
         </div>
 
         <div className = 'subject'>
-          <div id = "subjectColour6">
-
-          </div>
+          <div id = "subjectColour6"></div>
           <div className = 'course'>
             <p>Add</p>
           </div>

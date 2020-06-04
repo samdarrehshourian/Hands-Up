@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import profileImg from '../example-picture/example-picture.jpg';
 import chooseCourseIcon from '../icons/Flow/chooseCourse.png';
 import photoIcon from '../icons/Flow/photo.png';
@@ -6,8 +6,13 @@ import tagFriendsIcon from '../icons/Flow/tagFriends.png';
 import Post from './Post.js' 
 import '../scss-style/AddPosts.scss'; 
 
-const  AddPosts = () => {
+const  AddPosts = (props) => {
 
+  var name = props.name; 
+  var nameArray = name.split(" ");
+  var firstName = nameArray[0];
+  var placeholder = "Hi " + firstName + ", what's on your mind?"; 
+  
   const posts = [
     {
       userImg: profileImg, 
@@ -51,22 +56,6 @@ const  AddPosts = () => {
     }
   ]; 
 
-  const [postList, setPostList] = useState(posts);
-  const [newPost, setNewPost] = useState({});
-
-  const addPost = (event) => {
-    const newPostList = [...postList, newPost]; 
-    setPostList(newPostList); 
-    console.log(newPostList); 
-    event.preventDefault(); 
-}
-
-const handleChange = (event) => {
-  setNewPost({...newPost, [event.target.name]:event.target.value});
-  console.log({[event.target.name]:event.target.value}); 
- 
-}
-
   return (
     <div>
       <div className = 'add-post-container'>
@@ -75,8 +64,8 @@ const handleChange = (event) => {
         </div>
         <div className = 'add-post-content'>
           <div id = 'pic-input-container'>
-            <img id = 'profile-pic' src={profileImg} alt='profile'/>
-            <input type='text' name="content" placeholder="Hi Daniel, what's on your mind?" onSubmit={addPost} onChange={handleChange}/>
+            <img id = 'profile-pic' src={props.image} alt='profile'/>
+            <input type='text' name="content" placeholder={placeholder} />
           </div>
           <div className = 'feature-container'>
             <div className = 'feature'>
@@ -101,8 +90,8 @@ const handleChange = (event) => {
         </div>
       </div>
       {posts.map(post => (
-                <Post key={post.id} post={post}/>
-            ))}
+                <Post key={post.id} post={post} image={props.image}/>
+                ))}
     </div>
   );
 }

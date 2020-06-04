@@ -1,14 +1,12 @@
 import React from 'react';
-import Header from './components/Header';
-import Layout from './components/Layout';
+import Login from './components/Login';
 import './scss-style/App.scss'; 
 
-
 function App() {
+  console.log('Tjena')
   return (
     <div className="App">
-      <Header/>
-      <Layout/>
+      <Login/>
     </div>
   );
 }

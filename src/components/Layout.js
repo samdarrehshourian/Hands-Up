@@ -13,60 +13,56 @@ import achivmentsLogo from '../icons/Sidebar_meny/Achivments.png'
 import messageLogo from '../icons/Sidebar_meny/Message.png'
 import profileLogo from '../icons/Sidebar_meny/Profile.png'
 
-
-
-
-
-const  MenuBar = () => {
-  return (
-    <div id = 'layout-container'>
-        <Router>
-            <nav id = 'side-menu'>
-                <ul>
-                    <li>
-                        <img src={homeLogo} alt="logo" />   
-                        <NavLink exact activeClassName="active" to="/">Home</NavLink>
-                    </li>
-                    <li>
-                        <img src={coursesLogo} alt="logo" />
-                        <NavLink activeClassName="active" to="/courses">Courses</NavLink>
-                    </li>
-                    <li>
-                        <img src={achivmentsLogo} alt="logo" />
-                        <NavLink activeClassName="active" to="/achievements">Achievements</NavLink>
-                    </li>
-                    <li>
-                        <img src={messageLogo} alt="logo" />
-                        <NavLink activeClassName="active" to="/messages">Messages </NavLink>
-                        <span className="badge">2</span>
-                    </li>
-                    <li>
-                        <img src={profileLogo} alt="logo" />
-                        <NavLink activeClassName="active" to="/profile">Profile</NavLink>
-                    </li>
-                </ul>
-            </nav>
-            <Switch>
-                <Route exact path="/">
-                    <Home/>
-                </Route>
-                <Route exact path="/courses">
-                    <Courses/>
-                </Route>
-                <Route exact path="/messages">
-                    <Messages/>
-                </Route>
-                <Route exact path="/achievements">
-                    <Achievements/>
-                </Route>
-                <Route exact path="/profile">
-                    <Profile/>
-                </Route>
-            </Switch>
-        </Router>
-        <Schedule/>
-    </div>
-  );
+const  MenuBar = (props) => {
+    return (
+        <div id = 'layout-container'>
+            <Router>
+                <nav id = 'side-menu'>
+                    <ul>
+                        <li>
+                            <img src={homeLogo} alt="logo" />   
+                            <NavLink exact activeClassName="active" to="/">Home</NavLink>
+                        </li>
+                        <li>
+                            <img src={coursesLogo} alt="logo" />
+                            <NavLink activeClassName="active" to="/courses">Courses</NavLink>
+                        </li>
+                        <li>
+                            <img src={achivmentsLogo} alt="logo" />
+                            <NavLink activeClassName="active" to="/achievements">Achievements</NavLink>
+                        </li>
+                        <li>
+                            <img src={messageLogo} alt="logo" />
+                            <NavLink activeClassName="active" to="/messages">Messages </NavLink>
+                            <span className="badge">2</span>
+                        </li>
+                        <li>
+                            <img src={profileLogo} alt="logo" />
+                            <NavLink activeClassName="active" to="/profile">Profile</NavLink>
+                        </li>
+                    </ul>
+                </nav>
+                <Switch>
+                    <Route exact path="/">
+                        <Home name={props.name} image={props.image}/>
+                    </Route>
+                    <Route exact path="/courses">
+                        <Courses/>
+                    </Route>
+                    <Route exact path="/messages">
+                        <Messages/>
+                    </Route>
+                    <Route exact path="/achievements">
+                        <Achievements/>
+                    </Route>
+                    <Route exact path="/profile">
+                        <Profile name={props.name} image={props.image}/>
+                    </Route>
+                </Switch>
+            </Router>
+            <Schedule/>
+        </div>
+    );
 }
 
 

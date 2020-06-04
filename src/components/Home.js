@@ -2,6 +2,7 @@ import React from 'react';
 import '../scss-style/Home.scss';
 import AddPosts from './AddPosts.js' 
 import Post from './Post.js' 
+import background from '../home-picture/Handsup.jpg'
 
 
 const  Home = () => {

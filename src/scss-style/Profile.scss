@@ -5,6 +5,7 @@
     flex: 3;
     overflow-y: scroll;
     display: flex;
+    justify-content: center;
     .profile{
         h1 {
             font-family: "Roboto", sans-serif;
@@ -30,13 +31,9 @@
             text-align: center;
         }
         hr {
-            border-top: 1px solid $black;
-            border-bottom: $white;
-            border-width: thin;
-            margin-bottom: 0; 
-            margin-top: 4px;
-            margin-inline-start: 109px;
-            margin-inline-end: 109px;
+            border-top: 1px solid #000000;
+            border-bottom: #FFFFFF;
+            width: 45vw;
         }
     } 
 }

@@ -9,7 +9,6 @@ const  Profile = (props) => {
         <img src={props.image} alt='profile'/>
         <h2>{props.name}</h2>
         <hr></hr>
-        <AddPosts/>
       </div>
     </div>
   );

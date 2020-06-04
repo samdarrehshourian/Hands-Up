@@ -35,7 +35,7 @@
         }
 
         p{
-            @include font($bold, smaller, $black);
+            @include font($bold, smaller, $text);
         }
     }
     
@@ -45,7 +45,7 @@
         flex-wrap: wrap;
         
         p{
-            @include font($regular, smaller, $black);
+            @include font($regular, smaller, $text);
             margin-right: 11%;
             margin-left: 11%;
             margin-bottom: 5%;

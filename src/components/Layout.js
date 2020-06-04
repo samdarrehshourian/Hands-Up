@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'; 
+import {BrowserRouter as Router, Route, Switch, NavLink} from 'react-router-dom'; 
 import Home from './Home.js'; 
 import Courses from './Courses.js'; 
 import Messages from './Messages.js'; 
@@ -25,24 +25,24 @@ const  MenuBar = () => {
                 <ul>
                     <li>
                         <img src={homeLogo} alt="logo" />   
-                        <Link to="/">Home</Link>
+                        <NavLink exact activeClassName="active" to="/">Home</NavLink>
                     </li>
                     <li>
                         <img src={coursesLogo} alt="logo" />
-                        <Link to="/courses">Courses</Link>
+                        <NavLink activeClassName="active" to="/courses">Courses</NavLink>
                     </li>
                     <li>
                         <img src={achivmentsLogo} alt="logo" />
-                        <Link to="/achievements">Achievements</Link>
+                        <NavLink activeClassName="active" to="/achievements">Achievements</NavLink>
                     </li>
                     <li>
                         <img src={messageLogo} alt="logo" />
-                        <Link to="/messages">Messages </Link>
-                        <span class="badge">2</span>
+                        <NavLink activeClassName="active" to="/messages">Messages </NavLink>
+                        <span className="badge">2</span>
                     </li>
                     <li>
                         <img src={profileLogo} alt="logo" />
-                        <Link to="/profile">Profile</Link>
+                        <NavLink activeClassName="active" to="/profile">Profile</NavLink>
                     </li>
                 </ul>
             </nav>
@@ -68,5 +68,6 @@ const  MenuBar = () => {
     </div>
   );
 }
+
 
 export default MenuBar;

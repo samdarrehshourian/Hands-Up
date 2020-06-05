@@ -1,6 +1,5 @@
 import React from 'react';
 import '../scss-style/Profile.scss';
-import AddPosts from './AddPosts.js' 
 
 const  Profile = (props) => {
   return (

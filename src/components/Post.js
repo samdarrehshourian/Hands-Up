@@ -4,15 +4,31 @@ import like from '../icons/Flow/like.png';
 import share from '../icons/Flow/shareWithGroup.png';
 import '../scss-style/Post.scss'; 
 
-const  Post = (props) => {
-    return (
-        <div className = 'post-container'>
+const Post = (props) => {
+
+    let courseSelection; 
+
+    if(props.post.course === ""){
+        courseSelection = (
+            <div className = 'name-course-info-container'>
+                <img className = 'profile-pic' src={props.post.userImg} alt='Profile'/>
+                <p>{props.post.userName}</p>
+            </div>
+        )
+    }else{
+        courseSelection = (
             <div className = 'name-course-info-container'>
                 <img className = 'profile-pic' src={props.post.userImg} alt='Profile'/>
                 <p>{props.post.userName}</p>
                 <img className = 'arrow-icon' src={arrow} alt='Arrow-icon'/>
                 <p>{props.post.course}</p>
             </div>
+        )
+    }
+
+    return (
+        <div className = 'post-container'>
+            {courseSelection}
             <div className = 'content-container'>
                 <p className = 'content'>{props.post.content}</p>
             </div>

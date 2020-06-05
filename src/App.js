@@ -3,7 +3,6 @@ import Login from './components/Login';
 import './scss-style/App.scss'; 
 
 function App() {
-  console.log('Tjena')
   return (
     <div className="App">
       <Login/>
